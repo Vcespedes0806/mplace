@@ -23,6 +23,7 @@ async function getItems() {
      <article>
          <div class="title">${element.title}</div>
          <div class="price">${element.price} USD</div>
+         <a href="detail.html?product=${element.id}">Ver más</a>
      </article>
  `;
 
@@ -63,10 +64,13 @@ async function getItemDetail(productId) {
     const mainEl = document.getElementById('main')
     const titleEl = document.getElementById('title')
     const priceEl = document.getElementById('price')
+    const descriptionEl = document.getElementById('description')
+    const imageEl = document.getElementById('image')
 
     titleEl.innerHTML = data[0].title;
     priceEl.innerHTML = data[0].price;
-
+    descriptionEl.innerHTML = data[0].description;
+    imageEl.src = data[0].image;
     mainEl.style.display = 'block'
 }
 

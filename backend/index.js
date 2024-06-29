@@ -13,8 +13,8 @@ app.get('/api/products', (req, res) => {
     // Create the connection to database
     const connection = mysql.createConnection({
         host: 'localhost',
-        user: 'alan',
-        password: '1234',
+        user: 'victor',
+        password: '12345',
         database: 'mplace_app',
     });
 
@@ -35,8 +35,8 @@ app.get('/api/products/:id', (req, res) => {
     // Create the connection to database
     const connection = mysql.createConnection({
         host: 'localhost',
-        user: 'alan',
-        password: '1234',
+        user: 'victor',
+        password: '12345',
         database: 'mplace_app',
     });
 
